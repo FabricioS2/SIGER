@@ -1,0 +1,83 @@
+{% extends 'Login_Cadastro/base.html'%}
+
+
+{%block form%}
+
+
+<form>
+    <h1><strong>SIGER</strong> <strong class="cor_verde">IFRN</strong></h1>
+    <h2><strong>Cadastrar admistrador</strong></h2>
+
+    <div class="container">
+        <div class="row">
+            <!-- Coluna Esquerda -->
+            <div class="col-md-6">
+                <div class="mb-3 text-start">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control " id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control " id="sobrenome" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" class="form-control " id="cpf" placeholder="Digite seu CPF">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="programa" class="form-label">Faz parte do programa de alimentação estudantil?</label>
+                    <input type="text" class="form-control " id="programa" placeholder="Sim ou Não">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control " id="cidade" placeholder="Digite sua cidade">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="curso" class="form-label">Curso</label>
+                    <input type="text" class="form-control " id="curso" placeholder="Digite seu curso">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="foto" class="form-label">Foto de perfil</label>
+                    <input type="file" class="form-control " id="foto">
+                </div>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div class="col-md-6">
+                <div class="mb-3 text-start">
+                    <label for="nascimento" class="form-label">Data de nascimento</label>
+                    <input type="date" class="form-control " id="nascimento">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="matricula" class="form-label">Matrícula</label>
+                    <input type="text" class="form-control " id="matricula" placeholder="Digite sua matrícula">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control " id="email" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="confirmar_email" class="form-label">Confirmar email</label>
+                    <input type="email" class="form-control " id="confirmar_email" placeholder="Confirme seu email">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control " id="senha" placeholder="Digite sua senha">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="confirmar_senha" class="form-label">Confirmar senha</label>
+                    <input type="password" class="form-control " id="confirmar_senha" placeholder="Confirme sua senha">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary form-label botao_longo">Acessar</button>
+
+    <p>Já tem uma conta? <a class="link-primary text-decoration-none" href="{% url 'Login' %}">Iniciar sessão</a></p>
+</form>
+
+
+
+
+{%endblock%}
