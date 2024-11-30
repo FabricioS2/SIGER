@@ -1,0 +1,47 @@
+{%load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Confirmar_refeicao/css/index.css' %}">
+
+    <title>Confirmar refeição</title>
+</head>
+<body>
+    <div>
+        <div class="container" style="height: 90vh;">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col text-center fundo">
+              
+              <img src="{% static 'img/salad_9757124.svg' %}" alt="..." width="374" height="374" >
+      
+                {% if valor == 1 %}
+                <p class="p_sem_cor">Confirme sua refeição colocando a matrícula:</p>
+                <input class="input_grande no-spinners" type="number"  placeholder="22221094660099" id="inputNumero" ><br>
+                <button type="submit" class="btn btn-primary p_sem_cor">Confirmar</button>
+                {% elif valor == 2 %}
+                <p class="grande verde">Confirmação realizada </p>
+                <p class="grande verde">com sucesso!</p>
+                {% elif valor == 3 %}
+                <p class="grande vermelho">A matricula não consta</p>
+                <p class="grande vermelho">no sistema!</p>
+                {% elif valor == 4 %}
+                <p class="grande vermelho">Você teve sua refeição</p>
+                <p class="grande vermelho">indeferida ou não</p>
+                <p class="grande vermelho">solicitou!</p>
+                {% else %}
+                <p class="grande amarelo">Espere até o horário</p>
+                <p class="grande amarelo">da refeição!</p>
+                {% endif %}
+      
+            </div>
+          </div>
+        </div>
+</body>
+<script src="{% static 'js/index.js' %}" defer></script>
+</html>
+
