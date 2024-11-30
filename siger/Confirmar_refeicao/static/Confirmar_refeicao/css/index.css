@@ -1,0 +1,68 @@
+body{
+    /* background-color: rgba(240, 241, 243, 1) !important; */
+    background-color: yellowgreen !important;
+}
+
+.grande{
+    font-size: 64px;
+    margin-bottom: -30px;
+}
+
+.verde{
+    color: rgba(115, 218, 140, 1);
+}
+
+.amarelo{
+    color: rgba(255, 179, 87, 1);
+}
+
+.vermelho{
+    color: rgba(253, 92, 111, 1);
+}
+
+.p_sem_cor{
+    font-size: 36px;
+}
+
+
+.fundo {
+    margin-top: 65px;
+    padding-top: 160px;
+    width: 80%;
+    height: 95%;
+    background-color: yellow;
+    border-radius: 20px;
+  }
+  
+  input{
+    width: 360px;
+    height: 62px;
+    font-size: 62px;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+}
+
+.input_grande{
+    font-size: 42px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+
+/* Remove os botões nos navegadores modernos */
+.no-spinners {
+    -moz-appearance: textfield; /* Remove no Firefox */
+    -webkit-appearance: none;  /* Remove no Chrome, Safari e Edge */
+    appearance: textfield;     /* Remove em navegadores compatíveis */
+  }
+  
+  /* Remove as setas no Chrome, Safari e Edge */
+  .no-spinners::-webkit-inner-spin-button,
+  .no-spinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
