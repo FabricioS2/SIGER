@@ -25,17 +25,54 @@
                     <input type="text" class="form-control " id="cpf" placeholder="Digite seu CPF">
                 </div>
                 <div class="mb-3 text-start">
-                    <label for="programa" class="form-label">Faz parte do programa de alimentação estudantil?</label>
-                    <input type="text" class="form-control " id="programa" placeholder="Sim ou Não">
-                </div>
+                    <label for="programa" class="form-label">Está na Alimentação estudantil?</label>
+                    <select class="form-select" id="programa">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>                
                 <div class="mb-3 text-start">
                     <label for="cidade" class="form-label">Cidade</label>
                     <input type="text" class="form-control " id="cidade" placeholder="Digite sua cidade">
                 </div>
                 <div class="mb-3 text-start">
                     <label for="curso" class="form-label">Curso</label>
-                    <input type="text" class="form-control " id="curso" placeholder="Digite seu curso">
-                </div>
+                    <select class="form-select" id="curso">
+                        <option value="" disabled selected>Selecione seu curso</option>
+                        <!-- Técnico Integrado -->
+                        <option value="tecnico-integrado-alimentos">Técnico Integrado - Alimentos</option>
+                        <option value="tecnico-integrado-apicultura">Técnico Integrado - Apicultura</option>
+                        <option value="tecnico-integrado-informatica">Técnico Integrado - Informática</option>
+                        <option value="tecnico-integrado-eja-alimentos">Técnico Integrado EJA - Técnico em Alimentos</option>
+                        <option value="tecnico-integrado-eja-informatica">Técnico Integrado EJA - Técnico em Informática</option>
+                        
+                        <!-- Técnico Subsequente -->
+                        <option value="tecnico-subsequente-alimentos">Técnico Subsequente - Alimentos</option>
+                        <option value="tecnico-subsequente-apicultura">Técnico Subsequente - Apicultura</option>
+                        
+                        <!-- FIC -->
+                        <option value="fic-corte-costura">FIC - Corte e Costura (Vestuário)</option>
+                        <option value="fic-modelista-costureira">FIC - Modelista e Costureira em Geral</option>
+                        <option value="fic-processamento-frutas-hortalicas">FIC - Operador de Processamento de Frutas e Hortaliças</option>
+                        <option value="fic-doces-conservas">FIC - Preparador de Doces e Conservas</option>
+                        <option value="fic-processamento-alimentos">FIC - Processamento de Alimentos</option>
+                        
+                        <!-- Licenciatura -->
+                        <option value="licenciatura-quimica">Licenciatura - Química</option>
+                        
+                        <!-- Especialização -->
+                        <option value="especializacao-educacao-campo">Especialização - Educação do Campo – Saberes da Terra</option>
+                        <option value="especializacao-ciencias-naturais">Especialização - Ensino de Ciências Naturais e Matemática</option>
+                        
+                        <!-- Doutorado -->
+                        <option value="doutorado-ensino">Doutorado - Ensino (Renoen)</option>
+                        
+                        <!-- Tecnologia -->
+                        <option value="tecnologia-agroindustria">Tecnologia - Agroindústria</option>
+                        <option value="tecnologia-analise-desenvolvimento-sistemas">Tecnologia - Análise e Desenvolvimento de Sistemas</option>
+                    </select>
+                </div>                
                 <div class="mb-3 text-start">
                     <label for="foto" class="form-label">Foto de perfil</label>
                     <input type="file" class="form-control " id="foto">
